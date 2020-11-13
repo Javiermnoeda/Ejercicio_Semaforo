@@ -11,13 +11,14 @@ import java.util.Random;
             try {
                 cuadrilatero.comenzarPelea(this);
                 int duracion = new Random().nextInt(4000) + 1000;
-                System.out.println("Soy el "+getName()+" voy a ganar!! en "+ duracion);
+                System.out.println("¡¡Soy el "+getName()+" voy a ganar!!");
                 sleep(duracion);
-                System.out.println(getName()+" ha perdido, que entre el siguiente");
+                System.out.println(getName()+" ha perdido en "+duracion+" segundos, que entre el siguiente");
                 cuadrilatero.terminarPelea(this);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
+
     }
 
